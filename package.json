@@ -1,0 +1,20 @@
+{
+  "name": "opentab",
+  "version": "1.0.0",
+  "description": "The Social IOU App Built for Real Friends",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run server:dev\" \"npm run client:dev\"",
+    "server:dev": "cd server && npm run dev",
+    "client:dev": "cd client && npm run dev",
+    "build": "cd client && npm run build",
+    "server:start": "cd server && npm start",
+    "install:all": "npm install && cd client && npm install && cd ../server && npm install"
+  },
+  "keywords": ["iou", "expenses", "friends", "social", "money"],
+  "author": "Grafton Mouen",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
